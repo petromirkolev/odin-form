@@ -32,6 +32,7 @@
   font-family: monospace;
 }
 
+/* Right side box */
 .right-side {
   padding: 0 5%;
   display: flex;
@@ -40,7 +41,6 @@
   width: 100%;
   justify-content: space-evenly;
 }
-
 #upper-text {
   display: flex;
   flex-direction: column;
@@ -48,21 +48,53 @@
   height: 30%;
   justify-content: space-around;
 }
-#upper-text > p {
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-#upper-text > h3 {
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
+#upper-text > p,
+#upper-text > h3,
 #sign-up-form {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.first-row,
+.second-row,
+.third-row {
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
+  justify-content: flex-start;
 }
-#first-row,
-#second-row,
-#third-row {
+label {
+  padding: 10px 10px;
+}
+
+input {
+  width: 10vw;
+  height: 4vh;
+  border-radius: 10px;
+  border: 1px dotted black;
+}
+
+/* Footer */
+#footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 20%;
+}
+#footer > button {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 150px;
+  height: 40px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px gray;
+}
+#footer > button:hover {
+  cursor: pointer;
+}
+#footer > button:active {
+  background-color: green;
+  color: white;
 }
